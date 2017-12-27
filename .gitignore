@@ -2,4 +2,6 @@
 node_modules/
 
 # configuration
-server/config/config.json
+**/*.json
+!package.json
+# server/config/config.json
