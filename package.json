@@ -4,8 +4,8 @@
   "description": "timetap server-side",
   "main": "index.js",
   "scripts": {
-    "start": "node server/server.js",
-    "test": "mocha server/**/*.test.js"
+    "start": "export NODE_ENV=development || SET \"NODE_ENV=test\" && node server/server.js",
+    "test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha server/**/*.test.js"
   },
   "repository": {
     "type": "git",
