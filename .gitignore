@@ -2,9 +2,6 @@
 node_modules/
 
 # configuration
-# **/*.json
-# server/config/config.json
-*.json
-!./package.json
+server/config/config.json
 
-.idea/*
+.idea
