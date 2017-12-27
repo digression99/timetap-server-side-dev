@@ -1,0 +1,45 @@
+{
+  "name": "timetap",
+  "version": "1.0.0",
+  "description": "timetap server-side",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "mocha server/**/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digression99/timetap-server-side.git"
+  },
+  "keywords": [
+    "timetap",
+    "nodejs",
+    "react",
+    "javascript"
+  ],
+  "author": "Kim Ilsik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/digression99/timetap-server-side/issues"
+  },
+  "homepage": "https://github.com/digression99/timetap-server-side#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.0",
+    "lodash": "^4.17.4",
+    "moment": "^2.20.1",
+    "mongodb": "^3.0.1",
+    "mongoose": "^4.13.7",
+    "validator": "^9.2.0"
+  },
+  "optionalDependencies": {
+    "nodemon": "^1.14.3"
+  },
+  "devDependencies": {
+    "expect": "^22.0.3",
+    "mocha": "^4.0.1",
+    "supertest": "^3.0.0"
+  }
+}
