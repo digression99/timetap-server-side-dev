@@ -6,3 +6,5 @@ node_modules/
 # server/config/config.json
 *.json
 !./package.json
+
+.idea
