@@ -6,7 +6,7 @@ const path = require('path');
 const cors = require('cors');
 
 // configuration.
-const {config} = require('./config/config');
+const config = require('./config/config');
 const {mongoose} = require('./db/mongoose');
 
 // app setting.
