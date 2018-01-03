@@ -6,14 +6,11 @@ let config = {
     JWT_SECRET : ""
 };
 
-if (env === 'development' || env === 'test') {
-    const envConfig = require('./config.json')[env];
-    Object.keys(envConfig).forEach(key => config[key] = envConfig[key]);
-} else if (env === 'production') {
-    const envConfig = require('./config.json')[env];
-    Object.keys(envConfig).forEach(key => config[key] = envConfig[key]);
+const envConfig = require('./config.json')[env];
+Object.keys(envConfig).forEach(key => config[key] = envConfig[key]);
+
+if (env === 'production') {
     config.PORT = process.env.PORT || config.PORT;
-    console.log(config);
 }
 
 if (require.main == module) {
