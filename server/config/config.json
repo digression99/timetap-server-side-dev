@@ -9,10 +9,6 @@
     "MONGODB_URI" : "mongodb://localhost:27017/TodoApp",
     "JWT_SECRET" : "aiondo312317389fdjhksfhsaf"
   },
-  "production" : {
-    "PORT" : 8080,
-    "MONGODB_URI" : "mongodb://heroku_m4mljm2r:civr5j6fpcs7kcpi6kc9btdrd0@ds131687.mlab.com:31687/heroku_m4mljm2r",
-    "JWT_SECRET" : "gYSmVNDoHJ7ldtVlY7oQliu6fFJDq7svZPi0JoboCpPKRALDlz6w6dtJy7CB7IE"
-  }
+  "production" : {}
 }
 
