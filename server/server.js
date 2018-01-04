@@ -13,7 +13,9 @@ const {mongoose} = require('./db/mongoose');
 const app = express();
 // @Patrick
 // We need to specify the white-list in production.
-app.use(cors());
+app.use(cors({
+  exposedHeaders: ['x-auth']
+}));
 app.use(bodyParser.json());
 // app.use(express.static(__dirname + '/public'));
 
